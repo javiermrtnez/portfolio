@@ -8,7 +8,7 @@
 <p align="center">
     My portfolio made with React.js.
     <br />
-    <a href="https://portfolio-javiermrtnez.vercel.app/">Go to website</a>&nbsp;
+    <a href="https://javimartinez.dev">Go to website</a>&nbsp;
     ·
     &nbsp;<a href="https://github.com/javiermrtnez/portfolio/issues">Report Bug</a>
   </p>
