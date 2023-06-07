@@ -1,8 +1,11 @@
 import {
+  CypressIcon,
   FirebaseIcon,
   GitHubIcon,
+  GitIcon,
   HTML5Icon,
   JavaScriptIcon,
+  NodeIcon,
   ReactIcon,
   ReduxIcon,
   SassIcon,
@@ -32,9 +35,19 @@ export const TECHNOLOGIES = [
     href: 'https://redux.js.org/',
   },
   {
+    name: 'Node.js',
+    icon: <NodeIcon />,
+    href: 'https://nodejs.org/',
+  },
+  {
     name: 'Firebase',
     icon: <FirebaseIcon />,
     href: 'https://firebase.google.com/',
+  },
+  {
+    name: 'Git',
+    icon: <GitIcon />,
+    href: 'https://git-scm.com/',
   },
   {
     name: 'GitHub',
@@ -55,5 +68,10 @@ export const TECHNOLOGIES = [
     name: 'Sass',
     icon: <SassIcon />,
     href: 'https://sass-lang.com/',
+  },
+  {
+    name: 'Cypress',
+    icon: <CypressIcon />,
+    href: 'https://www.cypress.io/',
   },
 ];
