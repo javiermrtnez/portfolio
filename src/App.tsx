@@ -54,9 +54,11 @@ function App() {
 
           <ul className='flex items-center justify-center text-neutral-400'>
             {INFO.map(({ title, value }) => (
-              <li className='flex flex-col items-center sm:flex-row gap-2 border-r-[1px] border-dashed border-neutral-400 text-neutral-400 px-9 first-of-type:pl-0 last-of-type:pr-0 last-of-type:border-none'>
-                <div className='py-1 px-2 font-bold bg-white/10 rounded-md'>{value}</div>
-                <p className='text-sm leading-none text-center w-24 sm:text-left'>{title}</p>
+              <li className='flex after:border-r after:h-8 after:border-dashed after:border-neutral-400 after:mx-9 after:my-auto after:last:content-none'>
+                <div className='flex flex-col gap-2 items-center sm:flex-row text-neutral-400'>
+                  <div className='py-1 px-2 font-bold bg-white/10 rounded-md'>{value}</div>
+                  <p className='text-sm leading-none text-center w-24 sm:text-left'>{title}</p>
+                </div>
               </li>
             ))}
           </ul>
