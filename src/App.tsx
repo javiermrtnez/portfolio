@@ -91,7 +91,6 @@ function App() {
               Santander, donde he contribuido a mejorar sus servicios y aumentar su productividad
               mediante la implementación de software desarrollado con tecnologías web.
             </p>
-
             <p>
               Me distingo por mi capacidad para aprender rápidamente nuevas habilidades y lenguajes
               de programación, así como por mi destreza en la resolución de problemas. Mi enfoque
