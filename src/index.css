@@ -5,14 +5,16 @@
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #000;
 
   height: 100%;
+
+  --navbar-height: 64px;
+  --page-padding: 20px;
+  --page-width: 875px;
+  --page-width-with-padding: calc(var(--page-width) + calc(2 * var(--page-padding)));
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
   min-height: 100%;
 }
