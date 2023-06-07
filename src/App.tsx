@@ -1,3 +1,4 @@
+import { DocumentTextIcon } from './components/Icons';
 import Navbar from './components/Navbar';
 import BaseLayout from './layouts/BaseLayout';
 
@@ -54,7 +55,7 @@ function App() {
 
           <ul className='flex items-center justify-center text-neutral-400'>
             {INFO.map(({ title, value }) => (
-              <li className='flex after:border-r after:h-8 after:border-dashed after:border-neutral-400 after:mx-9 after:my-auto after:last:content-none'>
+              <li className='flex after:border-r after:h-8 after:border-dashed after:border-neutral-500 after:mx-2 sm:after:mx-9 after:my-auto after:last:content-none'>
                 <div className='flex flex-col gap-2 items-center sm:flex-row text-neutral-400'>
                   <div className='py-1 px-2 font-bold bg-white/10 rounded-md'>{value}</div>
                   <p className='text-sm leading-none text-center w-24 sm:text-left'>{title}</p>
@@ -62,6 +63,15 @@ function App() {
               </li>
             ))}
           </ul>
+
+          <a
+            className='flex gap-2 px-4 py-2 font-semibold rounded-md bg-black border border-neutral-600 text-neutral-400 hover:text-white hover:border-white transition-colors'
+            href='/CV_FranciscoJavierMartinezBueno.pdf'
+            target='_blank'
+          >
+            <DocumentTextIcon />
+            Currículum
+          </a>
         </section>
       </BaseLayout>
     </>
