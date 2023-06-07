@@ -10,7 +10,7 @@ const Navbar = () => {
           <img src={logo}></img>
         </a>
 
-        <ul className='flex gap-2 justify-center'>
+        {/* <ul className='flex gap-2 justify-center'>
           {NAVBAR_LINKS.map(({ name, id }) => (
             <li key={name} className='flex content-center items-center'>
               <a
@@ -21,7 +21,7 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </div>
     </header>
   );
