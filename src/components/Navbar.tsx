@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { NAVBAR_LINKS } from '../utils/constants/navbarLinks';
-import { SECTIONS_IDS } from '../utils/constants/sections';
+import { NAVBAR_LINKS } from '../utils/constants/navbarEnlaces';
+import { SECTIONS_IDS } from '../utils/constants/sectionsIdsNames';
 import logo from '/favicon.svg';
 import joinClassNames from '../utils/functions/classNames';
 
