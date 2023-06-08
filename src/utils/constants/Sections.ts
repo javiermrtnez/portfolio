@@ -8,7 +8,7 @@ export const SECTIONS_IDS = {
 };
 
 export const SECTIONS_NAMES = {
-  ABOUT_ME: 'Sobre mi',
+  ABOUT_ME: 'Sobre mí',
   TECHNOLOGIES: 'Tecnologías',
   EXPERIENCE: 'Experiencia',
   PROJECTS: 'Proyectos',
