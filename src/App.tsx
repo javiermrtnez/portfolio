@@ -1,4 +1,4 @@
-import { SECTIONS_IDS, SECTIONS_NAMES } from './utils/constants/sectionsIdsNames';
+import { SECTIONS_IDS, SECTIONS_NAMES } from './utils/constants/sections';
 import AboutMe from './components/AboutMe';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
