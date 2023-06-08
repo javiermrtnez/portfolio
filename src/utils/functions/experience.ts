@@ -1,6 +1,6 @@
 export function getExperienceYears() {
   // 1 de Octubre de 2021
-  const initialDate = '2021-09-01';
+  const initialDate = '2021/10/01';
 
   const givenDate = new Date(initialDate);
   const today = new Date();
