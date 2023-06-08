@@ -1,4 +1,4 @@
-import { SECTIONS_IDS, SECTIONS_NAMES } from './sections';
+import { SECTIONS_IDS, SECTIONS_NAMES } from './sectionIdsNames';
 
 export const NAVBAR_LINKS = [
   {
