@@ -62,10 +62,10 @@ function App() {
 
           <ul className='flex items-center justify-center text-neutral-400'>
             {INFO.map(({ title, value }) => (
-              <li className='flex after:border-r after:h-8 after:border-dashed after:border-neutral-500 after:mx-2 sm:after:mx-9 after:my-auto after:last:content-none'>
-                <div className='flex flex-col gap-2 items-center sm:flex-row text-neutral-400'>
+              <li className='flex after:border-r after:h-8 after:border-dashed after:border-neutral-500 after:mx-2 md:after:mx-9 after:my-auto after:last:content-none'>
+                <div className='flex flex-col gap-2 items-center md:flex-row text-neutral-400'>
                   <div className='py-1 px-2 font-bold bg-white/10 rounded-md'>{value}</div>
-                  <p className='text-sm leading-none text-center w-[105px] sm:text-left'>{title}</p>
+                  <p className='text-[13px] leading-none text-center w-24 md:text-left'>{title}</p>
                 </div>
               </li>
             ))}
@@ -82,7 +82,7 @@ function App() {
         </section>
 
         <Section id={SECTIONS_IDS.ABOUT_ME} title={SECTIONS_NAMES.ABOUT_ME}>
-          <div className='flex flex-col gap-4 text-[14.5px] text-neutral-400'>
+          <div className='flex flex-col gap-4 text-[14.5px] text-neutral-400 text-justify'>
             <p>
               Soy un Ingeniero Informático especializado en Ingeniería del Software y con una
               mención en Informática Empresarial. Me apasiona el desarrollo de software y las
@@ -101,7 +101,7 @@ function App() {
         </Section>
 
         <Section id={SECTIONS_IDS.TECHNOLOGIES} title={SECTIONS_NAMES.TECHNOLOGIES}>
-          <div className='flex gap-2 flex-wrap'>
+          <div className='flex gap-2 justify-between flex-wrap'>
             {TECHNOLOGIES.map(({ name, icon, href }) => (
               <Technology name={name} icon={icon} href={href} />
             ))}
