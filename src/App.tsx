@@ -45,7 +45,7 @@ function App() {
       <BaseLayout>
         <section
           id={SECTIONS_IDS.HOME}
-          className='h-[calc(100vh-var(--navbar-height))] py-10 flex flex-col justify-center items-center text-center gap-14'
+          className='h-[calc(100vh-var(--navbar-height))] flex flex-col justify-center items-center text-center gap-14'
         >
           <h2 className='text-xl sm:text-2xl text-neutral-400 font-extrabold'>
             ¡Hola! <span className='animate-hi inline-block origin-[70%_70%]'>👋</span> Soy Javier
