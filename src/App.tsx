@@ -1,10 +1,10 @@
+import { SECTIONS_IDS, SECTIONS_NAMES } from './utils/constants/sections';
 import AboutMe from './components/AboutMe';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Section from './components/Section';
 import Technologies from './components/Technologies';
 import BaseLayout from './layouts/BaseLayout';
-import { SECTIONS_IDS, SECTIONS_NAMES } from './utils/constants/sections';
 
 function App() {
   return (
