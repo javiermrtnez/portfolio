@@ -10,18 +10,20 @@ const Navbar = () => {
           <img src={logo}></img>
         </a>
 
-        {/* <ul className='flex gap-2 justify-center'>
-          {NAVBAR_LINKS.map(({ name, id }) => (
-            <li key={name} className='flex content-center items-center'>
-              <a
-                href={`#${id}`}
-                className='flex gap-2 items-center py-2 px-3 text-neutral-400 text-sm rounded-md leading-none hover:text-white transition-colors'
-              >
-                {name}
-              </a>
-            </li>
-          ))}
-        </ul> */}
+        <div className='hidden md:block'>
+          <ul className='flex gap-2 justify-center'>
+            {NAVBAR_LINKS.map(({ name, id }) => (
+              <li key={name} className='flex content-center items-center'>
+                <a
+                  href={`#${id}`}
+                  className='flex gap-2 items-center py-2 px-3 text-neutral-400 text-sm rounded-md leading-none hover:text-white transition-colors'
+                >
+                  {name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </header>
   );
