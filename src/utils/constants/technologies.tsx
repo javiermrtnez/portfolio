@@ -3,7 +3,6 @@ import {
   FirebaseIcon,
   GitHubIcon,
   GitIcon,
-  HTML5Icon,
   JavaScriptIcon,
   NodeIcon,
   ReactIcon,
@@ -11,6 +10,7 @@ import {
   SassIcon,
   TailwindIcon,
   TypeScriptIcon,
+  VercelIcon,
 } from '../../components/Icons';
 
 export const TECHNOLOGIES = [
@@ -55,11 +55,6 @@ export const TECHNOLOGIES = [
     href: 'https://github.com/',
   },
   {
-    name: 'HTML5',
-    icon: <HTML5Icon />,
-    href: 'https://www.w3schools.com/html/',
-  },
-  {
     name: 'Tailwind CSS',
     icon: <TailwindIcon />,
     href: 'https://tailwindcss.com/',
@@ -73,5 +68,10 @@ export const TECHNOLOGIES = [
     name: 'Cypress',
     icon: <CypressIcon />,
     href: 'https://www.cypress.io/',
+  },
+  {
+    name: 'Vercel',
+    icon: <VercelIcon />,
+    href: 'https://vercel.com/',
   },
 ];
