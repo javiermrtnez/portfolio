@@ -9,7 +9,7 @@ const Experience = () => {
       </div>
 
       {EXPERIENCES.map((experience, index) => (
-        <SingleExperience experience={experience} index={index} />
+        <SingleExperience key={experience.company} experience={experience} index={index} />
       ))}
     </div>
   );

@@ -34,7 +34,10 @@ const Home = () => {
 
       <ul className='flex items-center justify-center text-neutral-400'>
         {INFO.map(({ title, value }) => (
-          <li className='flex after:border-r after:h-8 after:border-dashed after:border-neutral-500 after:mx-2 md:after:mx-9 after:my-auto after:last:content-none'>
+          <li
+            key={title}
+            className='flex after:border-r after:h-8 after:border-dashed after:border-neutral-500 after:mx-2 md:after:mx-9 after:my-auto after:last:content-none'
+          >
             <div className='flex flex-col gap-2 items-center md:flex-row text-neutral-400'>
               <div className='py-1 px-2 font-bold bg-white/10 rounded-md'>{value}</div>
               <p className='text-[13px] leading-none text-center w-24 md:text-left'>{title}</p>

@@ -5,7 +5,7 @@ const Technologies = () => {
   return (
     <div className='flex gap-2 justify-between flex-wrap'>
       {TECHNOLOGIES.map(({ name, icon }) => (
-        <Technology name={name} icon={icon} />
+        <Technology key={name} name={name} icon={icon} />
       ))}
     </div>
   );
