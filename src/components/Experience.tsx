@@ -1,7 +1,7 @@
-import React from 'react';
 import { EXPERIENCE } from '../utils/constants/experience';
-import { getFormattedDate, monthDiff } from '../utils/functions/dates';
+import { getFormattedDate, getMonthDiff } from '../utils/functions/dates';
 import joinClassNames from '../utils/functions/classNames';
+import { isOdd } from '../utils/functions/numbers';
 
 const Experience = () => {
   return (
@@ -9,15 +9,16 @@ const Experience = () => {
       <div className='flex justify-center'>
         <span className='h-24 w-px bg-gradient-to-b from-[var(--background-color)] to-neutral-700'></span>
       </div>
-      {EXPERIENCE.map(({ company, role, startDate, endDate, description }, index) => (
-        <div className='flex'>
-          <div className='flex flex-col gap-2 flex-1 pr-8 pb-8'>
+
+      {EXPERIENCE.map(({ company, role, startDate, endDate, description, icon }, index) => (
+        <div className={joinClassNames('flex gap-8', isOdd(index) ? 'flex-row-reverse' : '')}>
+          <div className='flex flex-col gap-2 flex-1 pb-10'>
             <h1 className='font-extrabold text-lg'>{role}</h1>
             <div className='flex flex-col font-medium text-neutral-500'>
               <h2 className='text-sm'>{company}</h2>
               <small className='italic'>
                 {`${getFormattedDate(startDate)} - ${getFormattedDate(endDate)}`}{' '}
-                {`(${monthDiff(startDate, endDate)} meses)`}
+                {`(${getMonthDiff(startDate, endDate)})`}
               </small>
             </div>
             <p className='text-neutral-400 text-[14.5px] text-justify'>{description}</p>
@@ -35,8 +36,8 @@ const Experience = () => {
             ></span>
           </div>
 
-          <div className='flex-1 pl-8'>
-            <div className='w-28 h-28 rounded-2xl bg-neutral-800'></div>
+          <div className={joinClassNames('flex flex-1', isOdd(index) ? 'justify-end' : '')}>
+            <div className='w-20 h-20 rounded-2xl bg-neutral-800'>{icon}</div>
           </div>
         </div>
       ))}

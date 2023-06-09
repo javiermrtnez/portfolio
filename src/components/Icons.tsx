@@ -222,3 +222,19 @@ export const NodeIcon = () => (
     ></path>
   </svg>
 );
+
+export const FactumIcon = () => (
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256' xmlSpace='preserve'>
+    <g>
+      <rect x='57.9' y='111.8' style={{ fill: '#EDEDED' }} width='31.3' height='93.7' />
+      <polygon
+        style={{ fill: '#EDEDED' }}
+        points='167.2,143.1 167.2,111.8 89.1,111.8 120.3,143.1'
+      />
+      <path
+        style={{ fill: '#EDEDED' }}
+        d='M89.1,49.4c-17.3,0-31.3,14-31.3,31.2l0,0l31.3,31.3V80.6h109.3V49.4H89.1z'
+      />
+    </g>
+  </svg>
+);

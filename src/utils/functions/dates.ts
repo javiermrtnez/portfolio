@@ -1,15 +1,51 @@
-export const monthDiff = (rawStartDate: string, rawEndDate: string) => {
-  const startDate = new Date(rawStartDate);
-  const endDate = new Date(rawEndDate);
+export const getExperienceYears = () => {
+  // 1 de Octubre de 2021
+  const initialDate = '2021/10/01';
 
-  let months;
-  months = (endDate.getFullYear() - startDate.getFullYear()) * 12;
-  months -= startDate.getMonth();
-  months += endDate.getMonth();
-  return months <= 0 ? 0 : months;
+  const givenDate = new Date(initialDate);
+  const today = new Date();
+
+  const diff = today.getTime() - givenDate.getTime();
+  const millisecondsInYear = 1000 * 60 * 60 * 24 * 365.25;
+
+  const years = diff / millisecondsInYear;
+  const formattedYears = years.toFixed(1);
+
+  return formattedYears;
+};
+
+export const getMonthDiff = (rawStartDate: string, rawEndDate: string) => {
+  const startDate = new Date(rawStartDate);
+  const endDate = rawEndDate ? new Date(rawEndDate) : new Date();
+
+  const startYear = startDate.getFullYear();
+  const startMonth = startDate.getMonth();
+  const endYear = endDate.getFullYear();
+  const endMonth = endDate.getMonth();
+
+  const monthDiff = (endYear - startYear) * 12 + (endMonth - startMonth) + 1;
+
+  if (monthDiff >= 12) {
+    const years = Math.floor(monthDiff / 12);
+    const remainingMonths = monthDiff % 12;
+
+    if (remainingMonths === 0) {
+      return `${years} año${years > 1 ? 's' : ''}`;
+    } else {
+      return `${years} año${years > 1 ? 's' : ''} ${remainingMonths} mes${
+        remainingMonths > 1 ? 'es' : ''
+      }`;
+    }
+  }
+
+  return `${monthDiff} mes${monthDiff > 1 ? 'es' : ''}`;
 };
 
 export const getFormattedDate = (date: string) => {
+  if (!date) {
+    return 'Actualidad';
+  }
+
   return new Date(date)
     .toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })
     .replace(/^(\w)/, (match) => match.toUpperCase())

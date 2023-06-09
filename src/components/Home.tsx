@@ -1,4 +1,4 @@
-import { getExperienceYears } from '../utils/functions/experience';
+import { getExperienceYears } from '../utils/functions/dates';
 import { DocumentTextIcon } from './Icons';
 
 const INFO = [
