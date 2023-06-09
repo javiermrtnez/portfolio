@@ -12,7 +12,7 @@ const Experience = () => {
 
       {EXPERIENCE.map(({ company, role, startDate, endDate, description, icon }, index) => (
         <div className={joinClassNames('flex gap-8', isOdd(index) ? 'flex-row-reverse' : '')}>
-          <div className='flex flex-col gap-2 flex-1 pb-10'>
+          <div className='flex flex-col gap-2 w-full pb-10'>
             <h1 className='font-extrabold text-lg'>{role}</h1>
             <div className='flex flex-col font-medium text-neutral-500'>
               <h2 className='text-sm'>{company}</h2>
@@ -31,12 +31,12 @@ const Experience = () => {
                 'h-full',
                 index !== EXPERIENCE.length - 1
                   ? 'border-r border-dashed border-neutral-700'
-                  : 'w-px bg-gradient-to-b from-neutral-700 to-sky-400'
+                  : 'w-px bg-gradient-to-b from-neutral-700 to-[var(--background-color)]'
               )}
             ></span>
           </div>
 
-          <div className={joinClassNames('flex flex-1', isOdd(index) ? 'justify-end' : '')}>
+          <div className={joinClassNames('flex w-full', isOdd(index) ? 'justify-end' : '')}>
             <div className='flex justify-center items-center w-20 h-20 rounded-2xl border border-neutral-800'>
               <div className='w-12 h-12 flex justify-center items-center'>
                 {typeof icon === 'string' ? <img src={icon} alt={`${company} logo`} /> : icon}
