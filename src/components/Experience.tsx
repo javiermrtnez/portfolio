@@ -37,7 +37,11 @@ const Experience = () => {
           </div>
 
           <div className={joinClassNames('flex flex-1', isOdd(index) ? 'justify-end' : '')}>
-            <div className='w-20 h-20 rounded-2xl bg-neutral-800'>{icon}</div>
+            <div className='flex justify-center items-center w-20 h-20 rounded-2xl border border-neutral-800'>
+              <div className='w-12 h-12 flex justify-center items-center'>
+                {typeof icon === 'string' ? <img src={icon} alt={`${company} logo`} /> : icon}
+              </div>
+            </div>
           </div>
         </div>
       ))}

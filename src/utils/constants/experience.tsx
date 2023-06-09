@@ -1,4 +1,4 @@
-import { FactumIcon } from '../../components/Icons';
+import { FactumIcon, IndraIcon, WebEn72hIcon } from '../../components/Icons';
 
 export const EXPERIENCE = [
   {
@@ -17,6 +17,7 @@ export const EXPERIENCE = [
     endDate: '2022/12/01',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis orci, congue sed turpis ut, laoreet aliquam mi. Cras vitae congue nunc, sit amet tempus dolor. Donec fermentum turpis ut mauris iaculis, vitae malesuada dui commodo. Nullam id massa sed nunc malesuada congue vel vitae nisl. Curabitur iaculis, leo fringilla dignissim aliquet, dui quam eleifend eros, eget tincidunt lorem lacus at nulla.',
+    icon: 'OpenSpringLogo.png',
   },
   {
     company: 'Indra',
@@ -25,6 +26,7 @@ export const EXPERIENCE = [
     endDate: '2022/03/01',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis orci, congue sed turpis ut, laoreet aliquam mi. Cras vitae congue nunc, sit amet tempus dolor. Donec fermentum turpis ut mauris iaculis, vitae malesuada dui commodo. Nullam id massa sed nunc malesuada congue vel vitae nisl. Curabitur iaculis, leo fringilla dignissim aliquet, dui quam eleifend eros, eget tincidunt lorem lacus at nulla.',
+    icon: <IndraIcon />,
   },
   {
     company: 'WebEn72h',
@@ -33,5 +35,6 @@ export const EXPERIENCE = [
     endDate: '2021/12/01',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis orci, congue sed turpis ut, laoreet aliquam mi. Cras vitae congue nunc, sit amet tempus dolor. Donec fermentum turpis ut mauris iaculis, vitae malesuada dui commodo. Nullam id massa sed nunc malesuada congue vel vitae nisl. Curabitur iaculis, leo fringilla dignissim aliquet, dui quam eleifend eros, eget tincidunt lorem lacus at nulla.',
+    icon: <WebEn72hIcon />,
   },
 ];
