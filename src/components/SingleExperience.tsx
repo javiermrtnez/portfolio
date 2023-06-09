@@ -23,9 +23,14 @@ const SingleExperience = ({ experience, index }: Props) => {
   return (
     <div className={joinClassNames('flex gap-8', isOdd(index) ? 'flex-row-reverse' : '')}>
       <div className='flex flex-col w-full pb-10'>
-        <div className='flex flex-col gap-2'>
+        <div className={joinClassNames('flex flex-col gap-2', !isOdd(index) ? 'items-end' : '')}>
           <h1 className='font-extrabold text-lg'>{role}</h1>
-          <div className='flex flex-col font-medium text-neutral-500'>
+          <div
+            className={joinClassNames(
+              'flex flex-col font-medium text-neutral-500',
+              !isOdd(index) ? 'items-end' : ''
+            )}
+          >
             <h2 className='text-sm'>{company}</h2>
             <small className='italic'>
               {`${getFormattedDate(startDate)} - ${getFormattedDate(endDate)}`}{' '}
