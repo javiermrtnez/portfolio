@@ -45,7 +45,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: '2021/10/01',
     endDate: '2022/03/01',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis orci, congue sed turpis ut, laoreet aliquam mi. Cras vitae congue nunc, sit amet tempus dolor. Donec fermentum turpis ut mauris iaculis, vitae malesuada dui commodo. Nullam id massa sed nunc malesuada congue vel vitae nisl. Curabitur iaculis, leo fringilla dignissim aliquet, dui quam eleifend eros, eget tincidunt lorem lacus at nulla.',
+      'Cliente Telefónica: realización de la migración de sus aplicaciones de Oracle Forms a un entorno más moderno desarrollado en Java EE 8, así como brindar soporte y mantenimiento a los diversos módulos del proyecto.',
     icon: 'IndraLogo.webp',
     technologies: ['JSP', 'JavaScript', 'Java EE 8', 'PL/SQL', 'XLST', 'SVN'],
   },
@@ -55,7 +55,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: '2020/04/01',
     endDate: '2021/12/01',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis orci, congue sed turpis ut, laoreet aliquam mi. Cras vitae congue nunc, sit amet tempus dolor. Donec fermentum turpis ut mauris iaculis, vitae malesuada dui commodo. Nullam id massa sed nunc malesuada congue vel vitae nisl. Curabitur iaculis, leo fringilla dignissim aliquet, dui quam eleifend eros, eget tincidunt lorem lacus at nulla.',
+      'Ofrecíamos una amplia gama de servicios en línea para ayudar a nuestros clientes a establecer y mejorar su presencia en la web. Nuestro equipo se especializaba en la creación de páginas web y tiendas online multiplataforma, brindando soluciones personalizadas y adaptadas a las necesidades específicas del usuario. Además, ofrecíamos servicios de mantenimiento, actualización y migración de sitios web, tiendas online y dominios, así como servicios de gestión y administración de bases de datos.',
     icon: 'WebEn72hLogo.webp',
     technologies: ['JavaScript', 'HTML', 'CSS'],
   },
