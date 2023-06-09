@@ -37,9 +37,6 @@ export default {
           }
         },
       },
-      boxShadow: {
-        "header-border-bottom": "inset 0 -1px 0 0 hsla(0,0%,100%,.08)"
-      }
     },
   },
   plugins: [],

@@ -24,7 +24,7 @@ const Navbar = () => {
     <header
       className={joinClassNames(
         'sticky top-0 flex w-full z-10 h-[var(--navbar-height)] bg-opacity-50 backdrop-blur transition-shadow duration-200 ease-in-out',
-        scrolled ? 'shadow-header-border-bottom' : ''
+        scrolled ? 'shadow-[inset_0_-1px_0_0_hsla(0,0%,100%,.08)]' : ''
       )}
     >
       <div className='flex gap-3 items-center justify-between w-[var(--page-width-with-padding)] m-auto px-[var(--page-padding)]'>
