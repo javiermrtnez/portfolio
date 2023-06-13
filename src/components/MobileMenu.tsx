@@ -9,11 +9,11 @@ const MobileMenu = ({ handleMobileMenuOnClick }: Props) => {
   return (
     <div
       onClick={handleMobileMenuOnClick}
-      className='w-full h-full fixed z-50 p-4 inset-0 backdrop-blur-sm bg-black/80 md:hidden'
+      className='w-full h-full fixed z-50 p-4 inset-0 backdrop-blur bg-black/80 md:hidden'
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className='relative max-w-xs w-full ml-auto rounded-lg shadow-lg p-6 font-semibold dark:bg-neutral-800 dark:text-neutral-400 dark:highlight-white/5'
+        className='relative max-w-xs w-full ml-auto rounded-lg shadow-lg p-6 bg-neutral-800 text-neutral-400'
       >
         <button
           className='absolute top-4 right-4 p-2 transition-colors text-neutral-400 hover:text-white'
@@ -26,7 +26,7 @@ const MobileMenu = ({ handleMobileMenuOnClick }: Props) => {
             <li key={name} className='flex content-center items-center'>
               <a
                 href={`#${id}`}
-                className='flex p-2 text-neutral-400 rounded-md leading-none hover:text-white transition-colors'
+                className='flex p-2 text-neutral-400 font-medium rounded-md leading-none hover:text-white transition-colors'
                 onClick={handleMobileMenuOnClick}
               >
                 {name}
