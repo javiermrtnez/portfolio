@@ -3,8 +3,13 @@ import { NAVBAR_LINKS } from '../utils/constants/navbarLinks';
 import { SECTIONS_IDS } from '../utils/constants/sections';
 import logo from '/favicon.svg';
 import joinClassNames from '../utils/functions/classNames';
+import { EllipsisVerticalIcon } from './Icons';
 
-const Navbar = () => {
+interface Props {
+  handleMobileMenuOnClick: () => void;
+}
+
+const Navbar = ({ handleMobileMenuOnClick }: Props) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -38,7 +43,7 @@ const Navbar = () => {
               <li key={name} className='flex content-center items-center'>
                 <a
                   href={`#${id}`}
-                  className='flex gap-2 items-center py-2 px-3 text-neutral-400 text-sm rounded-md leading-none hover:text-white transition-colors'
+                  className='flex py-2 px-3 text-neutral-400 text-sm rounded-md leading-none hover:text-white transition-colors'
                 >
                   {name}
                 </a>
@@ -46,6 +51,10 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+
+        <button className='block md:hidden' onClick={handleMobileMenuOnClick}>
+          <EllipsisVerticalIcon />
+        </button>
       </div>
     </header>
   );

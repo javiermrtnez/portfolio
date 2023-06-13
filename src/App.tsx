@@ -7,6 +7,10 @@ import Technologies from './components/Technologies';
 import BaseLayout from './layouts/BaseLayout';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import { useState } from 'react';
+import { NAVBAR_LINKS } from './utils/constants/navbarLinks';
+import { CrossIcon } from './components/Icons';
+import MobileMenu from './components/MobileMenu';
 
 const SECTIONS = [
   {
@@ -53,9 +57,18 @@ const SECTIONS = [
 ];
 
 function App() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleMobileMenuOnClick = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+
+    document.body.style.overflow = !isMobileMenuOpen ? 'hidden' : '';
+  };
+
   return (
     <>
-      <Navbar />
+      <Navbar handleMobileMenuOnClick={handleMobileMenuOnClick} />
+      {isMobileMenuOpen && <MobileMenu handleMobileMenuOnClick={handleMobileMenuOnClick} />}
 
       <BaseLayout>
         {SECTIONS.map(({ id, title, component }) => (
