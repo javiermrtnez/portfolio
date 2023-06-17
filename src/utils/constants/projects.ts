@@ -8,7 +8,7 @@ export const PROJECTS = [
   },
   {
     name: 'ToDo App',
-    description: 'Aplicación para organiza y administra tus tareas',
+    description: 'Aplicación para organizar y administrar tus tareas',
     img: 'todo-app.png',
     github: 'https://github.com/javiermrtnez/todo-app',
     website: 'https://todo-app-javiermrtnez.vercel.app',

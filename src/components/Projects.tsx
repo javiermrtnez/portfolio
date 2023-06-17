@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className='grid gap-5 grid-cols-1 md:grid-cols-2'>
       {PROJECTS.map(({ name, description, img, github, website }) => (
-        <div className='rounded-md w-full h-fit bg-black border border-neutral-700'>
+        <div className='rounded-md w-full h-fit bg-black border border-neutral-800'>
           <img className='h-full rounded-t-md' src={img} />
 
           <div className='flex justify-between items-center p-2 pl-4'>
