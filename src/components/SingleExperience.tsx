@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { ChevronUp } from './Icons';
 import { EXPERIENCES } from '../utils/constants/experiences';
 import { Experience } from '../types/experience';
+import TechnologiesList from './TechnologiesList';
 
 interface Props {
   experience: Experience;
@@ -49,16 +50,7 @@ const SingleExperience = ({ experience, index }: Props) => {
           >
             <div className='flex flex-col gap-2 mt-4'>
               <h2 className='text-sm font-bold'>Tecnologías</h2>
-              <ul className='flex gap-2 flex-wrap'>
-                {technologies.map((technology) => (
-                  <li
-                    key={technology}
-                    className='rounded-md px-2 py-1 border border-neutral-800 bg-neutral-900 text-xs'
-                  >
-                    {technology}
-                  </li>
-                ))}
-              </ul>
+              <TechnologiesList technologies={technologies} />
             </div>
           </div>
         )}
