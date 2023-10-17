@@ -8,7 +8,7 @@ const TechnologiesList = ({ technologies }: Props) => {
       {technologies.map((technology) => (
         <li
           key={technology}
-          className='rounded-md px-2 py-1 border border-neutral-800 bg-neutral-900 text-xs'
+          className='rounded-md px-2 py-1 border border-neutral-800 bg-neutral-950 text-xs'
         >
           {technology}
         </li>

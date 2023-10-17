@@ -1,42 +1,38 @@
 import { PROJECTS } from '../utils/constants/projects';
-import { ArrowTopRightOnSquare, GitHubIcon2 } from './Icons';
+// import { ArrowTopRightOnSquare } from './Icons';
+import TechnologiesList from './TechnologiesList';
 
 const Projects = () => {
   return (
     <div className='grid gap-5 grid-cols-1 md:grid-cols-2'>
-      {PROJECTS.map(({ name, description, img, github, website }) => (
-        <div className='rounded-md w-full h-fit bg-black border border-neutral-800'>
+      {PROJECTS.map(({ name, description, img, website, technologies }) => (
+        <a
+          className='rounded-md w-full h-fit bg-black border transition-colors duration-200 border-neutral-800 hover:border-white'
+          href={website}
+          target='_blank'
+        >
           <img className='h-full rounded-t-md' src={img} />
 
-          <div className='flex justify-between items-center p-2 pl-4'>
-            <div className='flex flex-col overflow-hidden'>
-              <h2 className='text-sm font-semibold'>{name}</h2>
-              <small
-                title={description}
-                className='text-neutral-500 font-medium text-ellipsis overflow-hidden whitespace-nowrap w-full'
-              >
-                {description}
-              </small>
-            </div>
-            <div className='flex gap-1'>
-              <a
-                className='p-2 rounded opacity-70 transition-colors hover:bg-neutral-700/50 hover:opacity-100'
-                href={github}
-                target='_blank'
-              >
-                <GitHubIcon2 />
-              </a>
+          <div className='flex flex-col gap-3 p-4'>
+            <div className='flex justify-between items-center'>
+              <div className='flex flex-col overflow-hidden'>
+                <h2 className='text-sm font-semibold'>{name}</h2>
+                <small
+                  title={description}
+                  className='text-neutral-500 font-medium text-ellipsis overflow-hidden whitespace-nowrap w-full'
+                >
+                  {description}
+                </small>
+              </div>
 
-              <a
-                className='p-2 rounded opacity-70 transition-colors hover:bg-neutral-700/50 hover:opacity-100'
-                href={website}
-                target='_blank'
-              >
+              {/* <div className='p-2 rounded opacity-40 transition-opacity duration-200 hover:opacity-100'>
                 <ArrowTopRightOnSquare />
-              </a>
+              </div> */}
             </div>
+
+            {technologies?.length > 0 && <TechnologiesList technologies={technologies} />}
           </div>
-        </div>
+        </a>
       ))}
     </div>
   );

@@ -8,8 +8,6 @@ import BaseLayout from './layouts/BaseLayout';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import { useState } from 'react';
-import { NAVBAR_LINKS } from './utils/constants/navbarLinks';
-import { CrossIcon } from './components/Icons';
 import MobileMenu from './components/MobileMenu';
 
 const SECTIONS = [
@@ -37,23 +35,23 @@ const SECTIONS = [
     title: SECTIONS_NAMES.PROJECTS,
     component: <Projects />,
   },
-  {
-    id: SECTIONS_IDS.EDUCATION,
-    title: SECTIONS_NAMES.EDUCATION,
-    component: (
-      <div className='flex flex-col gap-4 text-[14.5px] text-neutral-400'>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis orci, congue sed
-          turpis ut, laoreet aliquam mi. Cras vitae congue nunc, sit amet tempus dolor. Donec
-          fermentum turpis ut mauris iaculis, vitae malesuada dui commodo. Nullam id massa sed nunc
-          malesuada congue vel vitae nisl. Curabitur iaculis, leo fringilla dignissim aliquet, dui
-          quam eleifend eros, eget tincidunt lorem lacus at nulla. Mauris non elementum erat. Aenean
-          leo enim, pharetra vitae ipsum vitae, tristique pellentesque leo. Vivamus ut pharetra
-          purus.
-        </p>
-      </div>
-    ),
-  },
+  // {
+  //   id: SECTIONS_IDS.EDUCATION,
+  //   title: SECTIONS_NAMES.EDUCATION,
+  //   component: (
+  //     <div className='flex flex-col gap-4 text-[14.5px] text-neutral-400'>
+  //       <p>
+  //         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas felis orci, congue sed
+  //         turpis ut, laoreet aliquam mi. Cras vitae congue nunc, sit amet tempus dolor. Donec
+  //         fermentum turpis ut mauris iaculis, vitae malesuada dui commodo. Nullam id massa sed nunc
+  //         malesuada congue vel vitae nisl. Curabitur iaculis, leo fringilla dignissim aliquet, dui
+  //         quam eleifend eros, eget tincidunt lorem lacus at nulla. Mauris non elementum erat. Aenean
+  //         leo enim, pharetra vitae ipsum vitae, tristique pellentesque leo. Vivamus ut pharetra
+  //         purus.
+  //       </p>
+  //     </div>
+  //   ),
+  // },
 ];
 
 function App() {

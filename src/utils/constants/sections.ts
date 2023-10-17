@@ -4,7 +4,7 @@ export const SECTIONS_IDS = {
   TECHNOLOGIES: 'technologies',
   EXPERIENCE: 'experience',
   PROJECTS: 'projects',
-  EDUCATION: 'education',
+  // EDUCATION: 'education',
 };
 
 export const SECTIONS_NAMES = {
@@ -12,5 +12,5 @@ export const SECTIONS_NAMES = {
   TECHNOLOGIES: 'Tecnologías',
   EXPERIENCE: 'Experiencia',
   PROJECTS: 'Proyectos',
-  EDUCATION: 'Educación',
+  // EDUCATION: 'Educación',
 };
