@@ -38,7 +38,7 @@ const SingleExperience = ({ experience, index }: Props) => {
               {`(${getMonthDiff(startDate, endDate)})`}
             </small>
           </div>
-          <p className='text-neutral-400 text-[14.5px] text-justify'>{description}</p>
+          <p className='text-neutral-400 text-[14.5px]'>{description}</p>
         </div>
 
         {technologies && technologies?.length > 0 && (
