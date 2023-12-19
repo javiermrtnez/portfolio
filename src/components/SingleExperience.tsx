@@ -13,9 +13,9 @@ interface Props {
 }
 
 const SingleExperience = ({ experience, index }: Props) => {
-  const { company, role, startDate, endDate, description, icon, technologies } = experience;
-
   const [isMoreInfoOpen, setIsMoreInfoOpen] = useState(false);
+
+  const { company, role, startDate, endDate, description, icon, technologies } = experience;
 
   const handleMoreInfoButton = () => {
     setIsMoreInfoOpen(!isMoreInfoOpen);
@@ -42,34 +42,34 @@ const SingleExperience = ({ experience, index }: Props) => {
         </div>
 
         {technologies && technologies?.length > 0 && (
-          <div
-            className={joinClassNames(
-              'transition-all duration-300 max-h-0 overflow-hidden',
-              isMoreInfoOpen ? 'max-h-[500px]' : ''
-            )}
-          >
-            <div className='flex flex-col gap-2 mt-4'>
-              <h2 className='text-sm font-bold'>Tecnologías</h2>
-              <TechnologiesList technologies={technologies} />
+          <>
+            <div
+              className={joinClassNames(
+                'transition-all duration-300 max-h-0 overflow-hidden',
+                isMoreInfoOpen ? 'max-h-[500px]' : ''
+              )}
+            >
+              <div className='flex flex-col gap-2 mt-4'>
+                <h2 className='text-sm font-bold'>Tecnologías</h2>
+                <TechnologiesList technologies={technologies} />
+              </div>
             </div>
-          </div>
-        )}
 
-        {technologies && technologies?.length > 0 && (
-          <button
-            className='flex mt-4 gap-1 items-center border rounded-full border-neutral-500 py-1 px-3 text-sm text-neutral-400 transition-colors hover:border-neutral-400 hover:text-neutral-200 w-fit'
-            onClick={handleMoreInfoButton}
-          >
-            <div className='w-5 h-5'>
-              <ChevronUp
-                className={joinClassNames(
-                  'transition-transform',
-                  isMoreInfoOpen ? 'rotate-180' : ''
-                )}
-              />
-            </div>
-            {`Ver ${isMoreInfoOpen ? 'menos' : 'más'}`}
-          </button>
+            <button
+              className='flex mt-4 gap-1 items-center border rounded-full border-neutral-500 py-1 px-3 text-sm text-neutral-400 transition-colors hover:border-neutral-400 hover:text-neutral-200 w-fit'
+              onClick={handleMoreInfoButton}
+            >
+              <div className='w-5 h-5'>
+                <ChevronUp
+                  className={joinClassNames(
+                    'transition-transform',
+                    isMoreInfoOpen ? 'rotate-180' : ''
+                  )}
+                />
+              </div>
+              {`Ver ${isMoreInfoOpen ? 'menos' : 'más'}`}
+            </button>
+          </>
         )}
       </div>
 
@@ -82,13 +82,13 @@ const SingleExperience = ({ experience, index }: Props) => {
               ? 'border-r border-dashed border-neutral-700'
               : 'w-px bg-gradient-to-b from-neutral-700 to-[var(--background-color)]'
           )}
-        ></span>
+        />
       </div>
 
       <div className={joinClassNames('flex w-full', isOdd(index) ? 'justify-end' : '')}>
         <div className='flex justify-center items-center w-20 h-20 rounded-2xl border border-neutral-800'>
           <div className='w-12 h-12 flex justify-center items-center'>
-            {typeof icon === 'string' ? <img src={icon} alt={`${company} logo`} /> : icon}
+            <img src={icon} alt={`${company} logo`} />
           </div>
         </div>
       </div>

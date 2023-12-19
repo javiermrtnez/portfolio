@@ -1,8 +1,12 @@
+import expensesTracker from '../../assets/projects/expenses-tracker.png';
+import toDoApp from '../../assets/projects/todo-app.png';
+import adviceGenerator from '../../assets/projects/advice-generator.png';
+
 export const PROJECTS = [
   {
     name: 'Expenses Tracker',
     description: 'Plataforma para gestionar tus finanzas',
-    img: 'expenses-tracker.png',
+    img: expensesTracker,
     website: 'https://expenses-tracker-javiermrtnez.vercel.app',
     technologies: [
       'React',
@@ -18,7 +22,7 @@ export const PROJECTS = [
   {
     name: 'ToDo App',
     description: 'Aplicación para organizar y administrar tus tareas',
-    img: 'todo-app.png',
+    img: toDoApp,
     website: 'https://todo-app-javiermrtnez.vercel.app',
     technologies: [
       'React',
@@ -34,7 +38,7 @@ export const PROJECTS = [
   {
     name: 'Advice Generator',
     description: 'Generador de consejos',
-    img: 'advice-generator.png',
+    img: adviceGenerator,
     website: 'https://advice-generator-javiermrtnez.vercel.app',
     technologies: ['Vite', 'React', 'Javascript'],
   },

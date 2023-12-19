@@ -14,9 +14,8 @@ export const getExperienceYears = () => {
   return formattedYears;
 };
 
-export const getMonthDiff = (rawStartDate: string, rawEndDate: string) => {
-  const startDate = new Date(rawStartDate);
-  const endDate = rawEndDate ? new Date(rawEndDate) : new Date();
+export const getMonthDiff = (startDate: Date, rawEndDate: Date | undefined) => {
+  const endDate = rawEndDate ?? new Date();
 
   const startYear = startDate.getFullYear();
   const startMonth = startDate.getMonth();
@@ -41,12 +40,12 @@ export const getMonthDiff = (rawStartDate: string, rawEndDate: string) => {
   return `${monthDiff} mes${monthDiff > 1 ? 'es' : ''}`;
 };
 
-export const getFormattedDate = (date: string) => {
+export const getFormattedDate = (date: Date | undefined) => {
   if (!date) {
     return 'Actualidad';
   }
 
-  return new Date(date)
+  return date
     .toLocaleDateString('es-ES', { month: 'long', year: 'numeric' })
     .replace(/^(\w)/, (match) => match.toUpperCase())
     .replace(' de', '');

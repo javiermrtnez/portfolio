@@ -17,8 +17,8 @@ export const NAVBAR_LINKS = [
     name: SECTIONS_NAMES.PROJECTS,
     id: SECTIONS_IDS.PROJECTS,
   },
-  {
-    name: SECTIONS_NAMES.EDUCATION,
-    id: SECTIONS_IDS.EDUCATION,
-  },
+  // {
+  //   name: SECTIONS_NAMES.EDUCATION,
+  //   id: SECTIONS_IDS.EDUCATION,
+  // },
 ];
