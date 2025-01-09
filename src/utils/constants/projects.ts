@@ -7,7 +7,7 @@ export const PROJECTS = [
     name: 'Expenses Tracker',
     description: 'Plataforma para gestionar tus finanzas',
     img: expensesTracker,
-    website: 'https://expenses-tracker-javiermrtnez.vercel.app',
+    website: 'https://expenses.javimartinez.dev',
     technologies: [
       'React',
       'Vite',
